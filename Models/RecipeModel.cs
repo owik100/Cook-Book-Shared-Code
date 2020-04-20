@@ -12,6 +12,7 @@ namespace Cook_Book_Shared_Code.Models
         public string Instruction { get; set; }
         public string NameOfImage { get; set; }
         public string ImagePath { get; set; }
+        public bool IsPublic { get; set; }
         public string UserId { get; set; }
     }
 }
