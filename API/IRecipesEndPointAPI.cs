@@ -8,8 +8,8 @@ namespace Cook_Book_Shared_Code.API
 {
     public interface IRecipesEndPointAPI
     {
-        Task<List<RecipeModel>> GetRecipesLoggedUser();
-        Task<List<RecipeModel>> GetPublicRecipes();
+        Task<List<RecipeModel>> GetRecipesLoggedUser(int PageSize, int PageNumber);
+        Task<List<RecipeModel>> GetPublicRecipes(int PageSize, int PageNumber);
         Task<bool> InsertRecipe(RecipeModel recipeModel);
         Task<bool> DeleteRecipe(string id);
         Task<bool> EditRecipe(RecipeModel recipeModel);

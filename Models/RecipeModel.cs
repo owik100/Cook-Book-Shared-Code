@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Cook_Book_Shared_Code.Models
 {
-    public class RecipeModel
+    public class RecipeModel : PaginationModel
     {
         public int RecipeId { get; set; }
         public string Name { get; set; }
