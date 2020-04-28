@@ -11,6 +11,7 @@ namespace Cook_Book_Shared_Code.API
     {
         Task<AuthenticatedUser> Authenticate(string username, string password);
         Task<LoggedUser> GetLoggedUserData(string token);
+        Task<bool> EditUser(LoggedUser recipeModel);
         HttpClient ApiClient { get; }
         Task<bool> Register(RegisterModel registerModel);
 
