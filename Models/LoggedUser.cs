@@ -10,6 +10,7 @@ namespace Cook_Book_Shared_Code.Models
         public string Email { get; set; }
         public string UserName { get; set; }
         public string Token { get; set; }
+        public List<string> FavouriteRecipes { get; set; }
 
         public void LogOffUser()
         {
@@ -17,6 +18,7 @@ namespace Cook_Book_Shared_Code.Models
             Email = "";
             UserName = "";
             Token = "";
+            FavouriteRecipes.Clear();
         }
     }
 }

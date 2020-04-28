@@ -10,6 +10,7 @@ namespace Cook_Book_Shared_Code.Models
         string Id { get; set; }
         string Token { get; set; }
         string UserName { get; set; }
+        List<string> FavouriteRecipes { get; set; }
 
         void LogOffUser();
     }
