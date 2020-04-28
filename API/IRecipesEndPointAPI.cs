@@ -10,6 +10,7 @@ namespace Cook_Book_Shared_Code.API
     {
         Task<List<RecipeModel>> GetRecipesLoggedUser(int PageSize, int PageNumber);
         Task<List<RecipeModel>> GetPublicRecipes(int PageSize, int PageNumber);
+        Task<List<RecipeModel>> GetFavouritesRecipes(int PageSize, int PageNumber);
         Task<bool> InsertRecipe(RecipeModel recipeModel);
         Task<bool> DeleteRecipe(string id);
         Task<bool> EditRecipe(RecipeModel recipeModel);
