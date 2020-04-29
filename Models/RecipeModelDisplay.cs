@@ -16,5 +16,6 @@ namespace Cook_Book_Shared_Code.Models
         public string UserId { get; set; }
         public string UserName { get; set; }
         public bool DisplayAsPublic { get; set; }
+        public bool DisplayAsFavourites{ get; set; }
     }
 }
